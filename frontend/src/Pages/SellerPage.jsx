@@ -17,7 +17,7 @@ const SellerPage = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const API_URL = "http://localhost:8000/api/products";
+  const API_URL = "https://kolam-backend-7oou.onrender.com/api/products";
 
   // Get JWT token from localStorage
   const getAuthHeaders = () => {

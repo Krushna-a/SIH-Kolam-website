@@ -22,7 +22,7 @@ const PaymentPage = () => {
       console.log("Creating Razorpay order for amount:", totalAmount);
 
       const orderResponse = await axios.post(
-        "http://localhost:8000/api/payment/create-order",
+        "https://kolam-backend-7oou.onrender.com/api/payment/create-order",
         { amount: Math.round(totalAmount * 100), email: guestEmail },
         { withCredentials: true }
       );
@@ -39,7 +39,7 @@ const PaymentPage = () => {
         handler: async function (response) {
           try {
             const verificationResponse = await axios.post(
-              "http://localhost:8000/api/payment/verify-payment",
+              "https://kolam-backend-7oou.onrender.com/api/payment/verify-payment",
               {
                 razorpay_payment_id: response.razorpay_payment_id,
                 razorpay_order_id: response.razorpay_order_id,

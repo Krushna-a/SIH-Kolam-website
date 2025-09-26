@@ -58,7 +58,7 @@ const KolamGenerator = () => {
 
       if (imageFile) body.append("image", imageFile);
 
-      const res = await fetch("http://localhost:8000/api/generate", {
+      const res = await fetch("https://kolam-backend-7oou.onrender.com/api/generate", {
         method: "POST",
         headers,
         body,
