@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
+MONGO_URL = os.getenv("MONGO_URL", "mongodb+srv://krushnaboinwad70_db_user:VwMU1RjHlDVY8YC0@cluster0.kdget64.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = "kolam_db"
 
 # Async client for FastAPI
