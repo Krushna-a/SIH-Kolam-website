@@ -5,8 +5,8 @@ import os
 import razorpay
 from db import database  # Your MongoDB client
 
-RAZORPAY_KEY_ID="rzp_test_RLrxZbic8zigbH"
-RAZORPAY_KEY_SECRET="arHQacbHk7CGELHxC6DbkL12"
+RAZORPAY_KEY_ID="rzp_live_RMzWRODq0wzJ9W"
+RAZORPAY_KEY_SECRET="X0UezYXhhTQtMZtZ7NsNc612"
 
 razorpay_client = razorpay.Client(
     auth=(RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET)
