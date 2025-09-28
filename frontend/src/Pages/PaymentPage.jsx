@@ -30,7 +30,7 @@ const PaymentPage = () => {
       const { id: order_id, amount, currency } = orderResponse.data;
 
       const options = {
-        key: "rzp_test_RLrxZbic8zigbH",
+        key: "rzp_live_RMzWRODq0wzJ9W",
         amount,
         currency,
         name: "Kolam Studio",
